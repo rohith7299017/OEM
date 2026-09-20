@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamPulse — Online Examination Platform</title>
+  <meta name="description" content="A modern, secure online examination platform for institutions and students. Conduct tests effortlessly with AI-powered proctoring.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ─── Navbar ─── -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark"><i class="fa-solid fa-feather-pointed"></i></span>
+        <span class="logo-word">Exam<strong>Pulse</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how">How It Works</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-right">
+        <button class="btn btn-ghost" id="loginBtn">Log in</button>
+        <a href="#pricing" class="btn btn-primary">Get Started</a>
+        <button class="hamburger" id="menuToggle" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── Hero ─── -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="pill"><i class="fa-solid fa-sparkles"></i> Now with AI proctoring</span>
+          <h1>Online exams,<br><span class="accent">simplified.</span></h1>
+          <p class="subtitle">Create, schedule, and deliver secure assessments to thousands of students — all from one calm, intuitive platform.</p>
+          <div class="hero-actions">
+            <a href="#pricing" class="btn btn-primary btn-lg">Start Free Trial</a>
+            <a href="#how" class="btn btn-outline btn-lg"><i class="fa-solid fa-play"></i> See how it works</a>
+          </div>
+          <div class="trust-row">
+            <span><i class="fa-solid fa-lock"></i> End-to-end encrypted</span>
+            <span><i class="fa-solid fa-globe"></i> 1,200+ institutions</span>
+            <span><i class="fa-solid fa-star"></i> 4.9 / 5 rating</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="card-top-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="card-body">
+              <div class="mock-question">
+                <span class="q-badge">Q3 of 20</span>
+                <p class="q-text">What is the time complexity of binary search on a sorted array?</p>
+                <div class="q-opts">
+                  <label class="opt"><span class="radio"></span> O(n)</label>
+                  <label class="opt selected"><span class="radio checked"></span> O(log n)</label>
+                  <label class="opt"><span class="radio"></span> O(n log n)</label>
+                  <label class="opt"><span class="radio"></span> O(1)</label>
+                </div>
+              </div>
+              <div class="card-footer-bar">
+                <span class="timer-chip"><i class="fa-regular fa-clock"></i> 42:15 left</span>
+                <span class="status-chip"><i class="fa-solid fa-shield-check"></i> Proctoring active</span>
+              </div>
+            </div>
+          </div>
+          <!-- Floating accent blobs -->
+          <div class="blob blob-1"></div>
+          <div class="blob blob-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Stats ─── -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat">
+          <h2 data-target="3400000" class="counter">0</h2>
+          <p>Exams delivered</p>
+        </div>
+        <div class="stat">
+          <h2 data-target="99.8" class="counter">0</h2>
+          <p>Uptime (%)</p>
+        </div>
+        <div class="stat">
+          <h2 data-target="1200" class="counter">0</h2>
+          <p>Institutions</p>
+        </div>
+        <div class="stat">
+          <h2 data-target="50000" class="counter">0</h2>
+          <p>Concurrent capacity</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Features ─── -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">Features</span>
+          <h2>Everything you need,<br>nothing you don't.</h2>
+          <p>A focused toolkit designed to let you run exams without friction.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="f-card">
+            <div class="f-icon lavender"><i class="fa-solid fa-user-shield"></i></div>
+            <h3>AI Proctoring</h3>
+            <p>Face verification, gaze tracking, and ambient noise analysis — automatically.</p>
+          </div>
+          <div class="f-card">
+            <div class="f-icon mint"><i class="fa-solid fa-lock"></i></div>
+            <h3>Secure Browser</h3>
+            <p>Lock down tabs, block screenshots, and disable copy-paste during exams.</p>
+          </div>
+          <div class="f-card">
+            <div class="f-icon peach"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Smart Question Bank</h3>
+            <p>15+ question types with dynamic shuffling and AI-assisted difficulty balancing.</p>
+          </div>
+          <div class="f-card">
+            <div class="f-icon sky"><i class="fa-solid fa-wifi"></i></div>
+            <h3>Offline Resilience</h3>
+            <p>Answers save locally and auto-sync when connectivity returns. Zero data loss.</p>
+          </div>
+          <div class="f-card">
+            <div class="f-icon rose"><i class="fa-solid fa-chart-simple"></i></div>
+            <h3>Instant Analytics</h3>
+            <p>Performance heatmaps, percentile ranks, and downloadable PDF report cards.</p>
+          </div>
+          <div class="f-card">
+            <div class="f-icon butter"><i class="fa-solid fa-plug"></i></div>
+            <h3>LMS Integration</h3>
+            <p>One-click sync with Canvas, Moodle, Google Classroom, and custom APIs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── How It Works ─── -->
+    <section class="how" id="how">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">How It Works</span>
+          <h2>Four steps to a stress-free exam.</h2>
+        </div>
+
+        <div class="steps-row">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Create</h3>
+            <p>Upload or auto-generate questions from your syllabus.</p>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Configure</h3>
+            <p>Set time limits, proctoring rules, and grading rubrics.</p>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Deliver</h3>
+            <p>Students take the test on any device, monitored by AI.</p>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <h3>Review</h3>
+            <p>Instant scores, analytics, and audit-ready proctoring logs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Testimonials ─── -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">Testimonials</span>
+          <h2>Loved by educators worldwide.</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="t-card">
+            <p class="t-quote">"ExamPulse turned our chaotic exam week into a smooth, single-click process. We ran finals for 8,000 students without a hitch."</p>
+            <div class="t-author">
+              <div class="avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <strong>Dr. Priya Mehta</strong>
+                <span>Dean of Sciences, Lakeview University</span>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <p class="t-quote">"The proctoring is surprisingly unintrusive for honest students, yet catches every suspicious behavior. Best balance I've seen."</p>
+            <div class="t-author">
+              <div class="avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <strong>James Okonkwo</strong>
+                <span>CTO, CertifyGlobal</span>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <p class="t-quote">"Students in rural areas with weak connectivity finished their exams without losing a single answer. The offline sync is a lifesaver."</p>
+            <div class="t-author">
+              <div class="avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <strong>Prof. Ananya Rao</strong>
+                <span>Head of Admissions, National Board</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Pricing ─── -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">Pricing</span>
+          <h2>Simple, honest pricing.</h2>
+          <p>No hidden fees. Cancel anytime.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="p-card">
+            <h3>Starter</h3>
+            <p class="p-desc">For small coaching centres</p>
+            <div class="p-price"><span class="currency">$</span>49<small>/mo</small></div>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Up to 500 students</li>
+              <li><i class="fa-solid fa-check"></i> Basic AI proctoring</li>
+              <li><i class="fa-solid fa-check"></i> Email support</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-block">Choose Starter</a>
+          </div>
+
+          <div class="p-card featured">
+            <span class="p-badge">Most Popular</span>
+            <h3>Pro</h3>
+            <p class="p-desc">For colleges & universities</p>
+            <div class="p-price"><span class="currency">$</span>149<small>/mo</small></div>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Up to 5,000 students</li>
+              <li><i class="fa-solid fa-check"></i> Full AI + lockdown browser</li>
+              <li><i class="fa-solid fa-check"></i> LMS integration</li>
+              <li><i class="fa-solid fa-check"></i> Priority support</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block">Start Free Trial</a>
+          </div>
+
+          <div class="p-card">
+            <h3>Enterprise</h3>
+            <p class="p-desc">For national boards & corporates</p>
+            <div class="p-price"><span class="custom-txt">Custom</span></div>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Unlimited students</li>
+              <li><i class="fa-solid fa-check"></i> Hybrid human + AI proctoring</li>
+              <li><i class="fa-solid fa-check"></i> On-premise option</li>
+              <li><i class="fa-solid fa-check"></i> Dedicated account manager</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-block">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FAQ ─── -->
+    <section class="faq" id="faq">
+      <div class="container faq-container">
+        <div class="section-head">
+          <span class="tag">FAQ</span>
+          <h2>Common questions.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>How does the AI proctoring work?</summary>
+            <p>Our system uses your device camera for continuous facial verification and gaze tracking. It flags suspicious behaviour like looking away, multiple faces, or ambient voices — all reviewed in an audit trail.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What if a student loses internet mid-exam?</summary>
+            <p>Answers are cached locally in an encrypted sandbox and auto-sync the moment connectivity returns. No answers are ever lost.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does it integrate with our LMS?</summary>
+            <p>Yes — we support LTI 1.3, Canvas, Moodle, Blackboard, Google Classroom, and custom REST/SSO integrations out of the box.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What devices do students need?</summary>
+            <p>Any modern browser on Windows, macOS, ChromeOS, iPads, or Android tablets. A lightweight optional app adds lockdown browser features.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is my data safe?</summary>
+            <p>All data is encrypted at rest (AES-256) and in transit (TLS 1.3). We are ISO 27001 certified and GDPR / FERPA compliant.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA Banner ─── -->
+    <section class="cta-banner">
+      <div class="container cta-inner">
+        <h2>Ready to run your first exam?</h2>
+        <p>Join 1,200+ institutions already using ExamPulse.</p>
+        <div class="cta-actions">
+          <a href="#pricing" class="btn btn-primary btn-lg">Get Started — It's Free</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-mark"><i class="fa-solid fa-feather-pointed"></i></span>
+          <span class="logo-word">Exam<strong>Pulse</strong></span>
+        </a>
+        <p>Secure, minimal, and effortless online examinations.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#how">How It Works</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Security</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 ExamPulse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ─── Login Snackbar Toast (no login page) ─── -->
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
