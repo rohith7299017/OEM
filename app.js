@@ -20,13 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   }
 
-  /* ── Login button toast ───────────────────────────────────────────────── */
-  const loginBtn = document.getElementById('loginBtn');
-  if (loginBtn) {
-    loginBtn.addEventListener('click', () => {
-      showToast('Login portal coming soon — stay tuned!');
-    });
-  }
+
 
   /* ── Animated counters on scroll ──────────────────────────────────────── */
   const counters = document.querySelectorAll('.counter');
